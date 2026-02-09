@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이무기와 깡철이</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Noto Serif KR"', 'serif'],
+            },
+            colors: {
+              oriental: {
+                900: '#032023', // Very dark teal
+                800: '#083D42', // Dark teal
+                700: '#115E65', // Teal
+                600: '#1D828A', // Light Teal
+                gold: '#D4AF37', // Gold accent
+                paper: '#F2E8CF', // Paper-like text
+                flame: '#B93627', // Red accent
+              }
+            },
+            backgroundImage: {
+              'pattern-scales': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20c10 0 20-10 20-20H0c0 10 10 20 20 20zm0 20c10 0 20-10 20-20H0c0 10 10 20 20 20z' fill='%23083D42' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E\")",
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #032023;
+        color: #F2E8CF;
+        font-family: 'Noto Serif KR', serif;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
