@@ -17,8 +17,8 @@ export const StorySection: React.FC<Props> = ({ data, isActive }) => {
         setIsVisible(entry.isIntersecting);
       },
       {
-        threshold: 0.15,
-        rootMargin: "-10% 0px -10% 0px"
+        threshold: 0.1, // Reduced threshold for better visibility
+        rootMargin: "-5% 0px -5% 0px" // Relaxed margin
       }
     );
 
